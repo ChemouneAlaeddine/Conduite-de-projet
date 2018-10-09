@@ -10,10 +10,10 @@ import fr.ubordeaux.ao.domain.model.Catalog;
 import fr.ubordeaux.ao.domain.model.Reference;
 
 public class CatalogImpl implements Catalog {
-    private Map<String, Reference> references;
+    private Map<String, Reference> references = null;
 
     public CatalogImpl() {
-        Map<String, Reference> references = new HashMap<String, Reference>();
+        this.references = new HashMap<String, Reference>();
     }
 
     public int size() {
